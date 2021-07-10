@@ -14,6 +14,10 @@
 		330F0FAB1E77806300F02C67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330F0FA91E77806300F02C67 /* LaunchScreen.storyboard */; };
 		330F0FB61E77806400F02C67 /* School_Zone_SafetyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330F0FB51E77806400F02C67 /* School_Zone_SafetyTests.swift */; };
 		330F0FC11E77806400F02C67 /* School_Zone_SafetyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330F0FC01E77806400F02C67 /* School_Zone_SafetyUITests.swift */; };
+		331C22151FC347E200EC8793 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331C22141FC347E200EC8793 /* CoreLocation.framework */; };
+		334762611FCB403B00E40BA3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334762601FCB403B00E40BA3 /* SettingsViewController.swift */; };
+		335A2F581FC4B9AE00660FB6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335A2F571FC4B9AE00660FB6 /* TableViewController.swift */; };
+		335A2F5A1FC4C0FF00660FB6 /* SchoolZones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335A2F591FC4C0FF00660FB6 /* SchoolZones.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		330F0FBC1E77806400F02C67 /* School Zone SafetyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "School Zone SafetyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		330F0FC01E77806400F02C67 /* School_Zone_SafetyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School_Zone_SafetyUITests.swift; sourceTree = "<group>"; };
 		330F0FC21E77806400F02C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		331C22141FC347E200EC8793 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		334762601FCB403B00E40BA3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		335A2F571FC4B9AE00660FB6 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		335A2F591FC4C0FF00660FB6 /* SchoolZones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolZones.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331C22151FC347E200EC8793 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				330F0F9F1E77806300F02C67 /* School Zone Safety */,
-				330F0FB41E77806400F02C67 /* School Zone SafetyTests */,
-				330F0FBF1E77806400F02C67 /* School Zone SafetyUITests */,
+				330F0FB41E77806400F02C67 /* SchoolZoneSafetyTests */,
+				330F0FBF1E77806400F02C67 /* SchoolZoneSafetyUITests */,
 				330F0F9E1E77806300F02C67 /* Products */,
+				331C22131FC347E200EC8793 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,26 +113,37 @@
 				330F0FA71E77806300F02C67 /* Assets.xcassets */,
 				330F0FA91E77806300F02C67 /* LaunchScreen.storyboard */,
 				330F0FAC1E77806300F02C67 /* Info.plist */,
+				335A2F571FC4B9AE00660FB6 /* TableViewController.swift */,
+				335A2F591FC4C0FF00660FB6 /* SchoolZones.swift */,
+				334762601FCB403B00E40BA3 /* SettingsViewController.swift */,
 			);
 			path = "School Zone Safety";
 			sourceTree = "<group>";
 		};
-		330F0FB41E77806400F02C67 /* School Zone SafetyTests */ = {
+		330F0FB41E77806400F02C67 /* SchoolZoneSafetyTests */ = {
 			isa = PBXGroup;
 			children = (
 				330F0FB51E77806400F02C67 /* School_Zone_SafetyTests.swift */,
 				330F0FB71E77806400F02C67 /* Info.plist */,
 			);
-			path = "School Zone SafetyTests";
+			path = SchoolZoneSafetyTests;
 			sourceTree = "<group>";
 		};
-		330F0FBF1E77806400F02C67 /* School Zone SafetyUITests */ = {
+		330F0FBF1E77806400F02C67 /* SchoolZoneSafetyUITests */ = {
 			isa = PBXGroup;
 			children = (
 				330F0FC01E77806400F02C67 /* School_Zone_SafetyUITests.swift */,
 				330F0FC21E77806400F02C67 /* Info.plist */,
 			);
-			path = "School Zone SafetyUITests";
+			path = SchoolZoneSafetyUITests;
+			sourceTree = "<group>";
+		};
+		331C22131FC347E200EC8793 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				331C22141FC347E200EC8793 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +209,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Aaroh Sharma";
 				TargetAttributes = {
 					330F0F9C1E77806200F02C67 = {
@@ -220,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				330F0F9C1E77806200F02C67 /* School Zone Safety */,
 				330F0FB01E77806400F02C67 /* School Zone SafetyTests */,
+				330F0F9C1E77806200F02C67 /* School Zone Safety */,
 				330F0FBB1E77806400F02C67 /* School Zone SafetyUITests */,
 			);
 		};
@@ -260,7 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				330F0FA31E77806300F02C67 /* ViewController.swift in Sources */,
+				335A2F581FC4B9AE00660FB6 /* TableViewController.swift in Sources */,
 				330F0FA11E77806300F02C67 /* AppDelegate.swift in Sources */,
+				335A2F5A1FC4C0FF00660FB6 /* SchoolZones.swift in Sources */,
+				334762611FCB403B00E40BA3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +348,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -332,7 +358,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -355,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -373,7 +403,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -381,7 +413,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -398,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -411,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "School Zone Safety/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "schoolzone.School-Zone-Safety";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "School Zone Safety/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "schoolzone.School-Zone-Safety";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +541,7 @@
 				330F0FC71E77806400F02C67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		330F0FC81E77806400F02C67 /* Build configuration list for PBXNativeTarget "School Zone SafetyTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +550,7 @@
 				330F0FCA1E77806400F02C67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		330F0FCB1E77806400F02C67 /* Build configuration list for PBXNativeTarget "School Zone SafetyUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +559,7 @@
 				330F0FCD1E77806400F02C67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
